@@ -10,7 +10,18 @@ header {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+header {
+  padding: 100px 0px 50px;
+}
+
 h1,
 h2 {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+.second {
+  padding: 50px 0;
 }
