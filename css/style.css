@@ -1,7 +1,6 @@
 @import url("//fonts.googleapis.com/css?family=Roboto:300,400,500,700");
 
 .container {
-  width: 972px;
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
@@ -14,6 +13,66 @@
   flex-wrap: wrap;
   margin-left: -8px;
   margin-right: -8px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+
+  .col-md-1,
+  .col-md-2,
+  .col-md-3,
+  .col-md-4,
+  .col-md-5,
+  .col-md-6,
+  .col-md-7,
+  .col-md-8,
+  .col-md-9,
+  .col-md-10,
+  .col-md-11,
+  .col-md-12 {
+    padding-left: 8px;
+    padding-right: 8px;
+    box-sizing: border-box;
+  }
+
+  .col-md-1 {
+    flex-basis: 8.3333%;
+  }
+  .col-md-2 {
+    flex-basis: 16.6666%;
+  }
+  .col-md-3 {
+    flex-basis: 24.9999%;
+  }
+  .col-md-4 {
+    flex-basis: 33.3333%;
+  }
+  .col-md-5 {
+    flex-basis: 41.6665%;
+  }
+  .col-md-6 {
+    flex-basis: 49.9998%;
+  }
+  .col-md-7 {
+    flex-basis: 58.3331%;
+  }
+  .col-md-8 {
+    flex-basis: 66.6664%;
+  }
+  .col-md-9 {
+    flex-basis: 74.9997%;
+  }
+  .col-md-10 {
+    flex-basis: 83.3333%;
+  }
+  .col-md-11 {
+    flex-basis: 91.6663%;
+  }
+  .col-md-12 {
+    flex-basis: 100%;
+  }
 }
 
 @media (min-width: 991px) {
@@ -90,6 +149,12 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+@media (min-width: 768px) {
+  header .logo a img {
+    width: 107px;
+  }
+}
+
 header {
   display: flex;
   align-items: center;
@@ -101,6 +166,16 @@ header {
 header .logo {
   display: flex;
   align-items: center;
+  height: 40px;
+}
+
+@media (min-width: 768px) {
+  header .location {
+    justify-content: flex-start;
+  }
+  header .location p {
+    font-size: 13px;
+  }
 }
 
 header .location {
@@ -139,6 +214,13 @@ header .asap-button {
   line-height: 24px;
 }
 
+@media (min-width: 768px) {
+  header .asap-button {
+    font-size: 13px;
+    width: 57px;
+  }
+}
+
 header .location input {
   background: url(../images/location.svg) no-repeat 12px;
   display: inline-flex;
@@ -167,6 +249,13 @@ header .sign-up-button {
   text-decoration: none;
   font-size: 13px;
   color: #1d1d1d;
+}
+
+@media (min-width: 768px) {
+  header .location input {
+    font-size: 13px;
+    width: 215px;
+  }
 }
 
 header .register-button {
