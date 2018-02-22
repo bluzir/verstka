@@ -1,55 +1,219 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css">
-    <title>Курс по фронтенду 1.5</title>
+    <title>UberEats</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <nav>
-        <a href="#whoami">Кто я такой</a>
-        <header>
-            <h1>Курс по фронтенду.
-                <br>Версия 1.5</h1>
-            <p>Премиальный. Бутиковый. Практический.</p>
-        </header>
-    </nav>
-    <main>
-        <section class="second" id="#whoami">
-            <h2>Кто я такой</h2>
-            <p>Меня зовут Евгений Родионов и я учу людей фронтенду.</p>
-            <p>Я руководил разработкой Рублевки.ру и обучил команду которая сейчас работает в Тинькофф, Рокетбанке, Ростелекоме
-                и немецков Kairion</p>
-            <p>Я веду канал про фронтенд в
-                <a href="#">Телеграме</a>, пишу статьи на
-                <a href="#">Медиуме</a> и выпускаю 5-минутные видео на
-                <a href="#">Ютубе.</a>
-            </p>
-            <p>Хочу, чтобы в России были крутые интерфейсы. Я взращиваю крутых ребят, с которыми готов работать сам.</p>
-            <p>Спроси у Жени, Ильи, Кости, Люды и Лизы.</p>
-        </section>
-        <section>
-            <h2>Ченжлог к версии 1.5</h2>
-            <p>Я провел 4 потока и понял узкие места курса. Да, люди добивались своих целей — находили работу или запускают
-                продукты, но сила трения была высокой, so everu update of our Facebook app includes improvements for speed
-                and reliablility. </p>
-            <p>Bug fixes and perfomance improvements.</p>
-            <h3>Было</h3>
-            <ul>
-                <li>материалы готовились во время курса;</li>
-                <li>мало теории;</li>
-                <li>нестабильная программа;</li>
-            </ul>
-            <h3>Стало</h3>
-            <ul>
-                <li>🔥 макеты и АПИ сделаны до начала курса;</li>
-                <li>🔥 новые объясняющие видео;</li>
-                <li>🔥 программа не будет прыгать на ходу;</li>
-            </ul>
-        </section>
-    </main>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-2 logo">
+                    <a href="#">
+                        <img src="./images/logo.svg" alt="UberEats">
+                    </a>
+                </div>
+                <div class="col-6 location">
+                    <a href="#" class="asap-button">ASAP</a>
+                    <p>to</p>
+                    <input type="text" value="ul. Bolshaya Dmitrovka, 22">
+                </div>
+                <div class="col-4 nav">
+                    <a href="#" class="sign-up-button">Sign Up</a>
+                    <a href="#" class="register-button">Register</a>
+                    <a href="#" class="basket-button"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="search-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <input type="text" placeholder="Search for restaurant or cuisine">
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="restaurant__list">
+        <div class="container">
+            <h1>Moscow Restaurants</h1>
+            <div class="row restaraunt__row">
+                <div class="col-4">
+                    <div class="restaratunt__item">
+                        <img src="./images/photo1.png" alt="Макдоналдс — Газетный">
+                        <div class="restaurant__description">
+                            <h2>Макдоналдс — Газетный</h2>
+                            <h3>₽₽</h3> •
+                            <h3>Бургеры</h3>
+                            <h4>25 - 35 Min</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="restaraunt__item">
+                        <img src="./images/photo2.png" alt="DimSum & Co — ЦДМ">
+                        <div class="restaurant__description">
+                            <h2>DimSum & Co — ЦДМ</h2>
+                            <h3>₽</h3> •
+                            <h3>Японская</h3> •
+                            <h3>Китайская</h3> •
+                            <h3>Азиатская</h3>
+                            <h4>40 - 50 Min</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <img src="./images/photo3.png" alt="ДвижОК — Манежная">
+                    <div class="restaraunt__item">
+                        <div class="restaurant__description">
+                            <h2>ДвижОК — Манежная</h2>
+                            <h3>₽₽</h3> •
+                            <h3>Американская</h3> •
+                            <h3>Европейская</h3>
+                            <h4>35 - 45 Min</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row restaurant__row">
+                <div class="col-4">
+                    <div class="restaraunt__item">
+                        <img src="./images/photo4.png" alt="НЯ — NHA">
+                        <div class="restaurant__description">
+                            <h2>НЯ — NHA</h2>
+                            <h3>₽₽</h3> •
+                            <h3>Вьетнамская</h3>
+                            <h4>30 - 40 Min</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="restaraunt__item">
+                        <img src="./images/photo5.png" alt="Точка Дзы — Цветной">
+                        <div class="restaurant__description">
+                            <h2>Точка Дзы — Цветной</h2>
+                            <h3>₽₽</h3> •
+                            <h3>Вьетнамская</h3>
+                            <h4>40 - 50 Min</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="restaraunt__item">
+                        <img src="./images/photo6.png" alt="Cinnabon">
+                        <div class="restaurant__description">
+                            <h2>Cinnabon</h2>
+                            <h3>₽₽</h3> •
+                            <h3>Выпечка</h3> •
+                            <h3>Десерты</h3> •
+                            <h3>Капкейки</h3>
+                            <h4>25 - 35 Min</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row restaurant__row">
+                <div class="col-4">
+                    <div class="restaraunt__item">
+                        <img src="./images/photo7.png" alt="PIZZELOVE">
+                        <div class="restaurant__description">
+                            <h2>PIZZELOVE</h2>
+                            <h3>₽₽</h3> •
+                            <h3>Пицца</h3>
+                            <h4>15 - 25 Min</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="restaraunt__item">
+                        <img src="./images/photo8.png" alt="Zю кафе — Тверская">
+                        <div class="restaurant__description">
+                            <h2>Zю кафе — Тверская</h2>
+                            <h3>₽₽</h3> •
+                            <h3>Японская</h3>
+                            <h4>25 - 35 Min</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="restaraunt__item">
+                        <img src="./images/photo9.png" alt="Bar BQ Cafe — Манежная">
+                        <div class="restaurant__description">
+                            <h2>Bar BQ Cafe — Манежная</h2>
+                            <h3>₽₽₽</h3> •
+                            <h3>Европейская</h3>
+                            <h4>30 - 40 Min</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img src="./images/logo_white.svg" alt="UberEats" class="footer-logo">
+                    <hr>
+                </div>
+                <div class="col-4">
+                    <div class="language">
+                        <div class="language__select">
+                            <select>
+                                <option value="English">English</option>
+                            </select>
+                        </div>
+                    </div>
+                    <h5>
+                        <span>#</span>UberEats</h5>
+                    <div class="social">
+                        <a href="#" class="facebook_logo"></a>
+                        <a href="#" class="twitter_logo"></a>
+                        <a href="#" class="instagram_logo"></a>
+                    </div>
+                </div>
+                <div class="col-4 footer-menu">
+                    <a href="#">About UberEats</a>
+                    <a href="#">Become a Delivery Partner</a>
+                    <a href="#">Become a Restaurant Partner</a>
+                </div>
+                <div class="col-4 footer-menu">
+                    <a href="#">See all cities</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Help</a>
+                    <a href="#">FAQs</a>
+                </div>
+                <div class="col-12">
+                    <hr class="hr-2">
+                </div>
+                <div class="col-12">
+                    <div class="mobile-apps">
+                        <a href="#" class="appstore"></a>
+                        <a href="#" class="googleplay"></a>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <hr class="hr-3">
+                </div>
+                <div class="col-4">
+                    <a href="#" class="copyright">© 2017 Uber Technologies Inc.</a>
+                </div>
+                <div class="col-4">
+                    <a href="#" class="copyright">Privacy</a>
+                </div>
+                <div class="col-4">
+                    <a href="#" class="copyright">Terms</a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <a href="#" class="top_button"></a>
 </body>
 
 </html>

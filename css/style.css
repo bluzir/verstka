@@ -1,0 +1,374 @@
+@import url("//fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+
+.container {
+  width: 972px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  padding-left: 8px;
+  padding-right: 8px;
+  box-sizing: border-box;
+}
+
+.col-1 {
+  flex-basis: 8.3333%;
+}
+.col-2 {
+  flex-basis: 16.6666%;
+}
+.col-3 {
+  flex-basis: 24.9999%;
+}
+.col-4 {
+  flex-basis: 33.3333%;
+}
+.col-5 {
+  flex-basis: 41.6665%;
+}
+.col-6 {
+  flex-basis: 49.9998%;
+}
+.col-7 {
+  flex-basis: 58.3331%;
+}
+.col-8 {
+  flex-basis: 66.6664%;
+}
+.col-9 {
+  flex-basis: 74.9997%;
+}
+.col-10 {
+  flex-basis: 83.3333%;
+}
+.col-11 {
+  flex-basis: 91.6663%;
+}
+.col-12 {
+  flex-basis: 100%;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  height: 72px;
+  box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .location {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+header .nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header img {
+  display: flex;
+}
+
+header p {
+  display: inline-flex;
+  margin: 0 9px 0 9px;
+}
+
+header .asap-button {
+  width: 65px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 16px;
+  color: #1d1d1d;
+  text-align: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  line-height: 24px;
+}
+
+header .location input {
+  background: url(../images/location.svg) no-repeat 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 292px;
+  height: 40px;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  color: #1d1d1d;
+  font-size: 16px;
+  line-height: 24px;
+  padding-left: 36px;
+  outline: none;
+}
+
+header .sign-up-button {
+  width: 80px;
+  height: 40px;
+  margin-right: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  text-decoration: none;
+  font-size: 13px;
+  color: #1d1d1d;
+}
+
+header .register-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 40px;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  text-decoration: none;
+  font-size: 13px;
+  color: #fff;
+  background: #262626;
+  margin-right: 27px;
+}
+
+header .basket-button {
+  display: inline-flex;
+  width: 19px;
+  height: 22px;
+  background: url(../images/basket.svg);
+}
+
+.search-form {
+  margin-top: 32px;
+}
+
+.search-form input {
+  display: flex;
+  padding: 15px 0px 15px 30px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid rgba(117, 117, 117, 0.5);
+  color: rgba(98, 98, 98, 0.3);
+  font-size: 16px;
+  outline: none;
+  background: url(../images/search.svg) no-repeat 0px;
+}
+
+.restaurant__list .restaurant__row {
+  margin-top: 36px;
+}
+
+.restaurant__list h1 {
+  font-size: 22px;
+  color: #1d1d1d;
+  margin: 56px 0px 16px 0px;
+  font-weight: normal;
+}
+
+.restaurant__list h2 {
+  font-size: 16px;
+  color: #1d1d1d;
+  margin: 16px 0px 4px 0px;
+  line-height: 24px;
+  font-weight: normal;
+}
+
+.restaurant__list h3 {
+  display: inline-flex;
+  font-size: 14px;
+  color: #626262;
+  margin: 0px 0px 4px 0px;
+  line-height: 21px;
+  font-weight: normal;
+}
+
+.restaurantlist h4 {
+  font-size: 13px;
+  color: #1d1d1d;
+  margin: 0;
+  line-height: 21px;
+  font-weight: normal;
+}
+
+footer {
+  display: flex;
+  margin-top: 80px;
+  background: #262626;
+}
+
+footer .footer-logo {
+  margin-top: 56px;
+}
+
+footer hr {
+  opacity: 0.4;
+  margin-top: 40px;
+}
+
+footer .hr-2 {
+  margin-top: 48px;
+}
+
+footer .hr-3 {
+  margin-top: 0px;
+}
+
+.language select {
+  background: url(../images/world.svg) no-repeat 26px;
+  display: flex;
+  width: 227px;
+  height: 40px;
+  border: none;
+  border-radius: 2px;
+
+  outline: none;
+  color: #fff;
+  font-size: 13px;
+  line-height: 13px;
+  padding-left: 48px;
+  margin-top: 32px;
+  text-transform: uppercase;
+  -webkit-appearance: none;
+}
+
+.language .language__select {
+  background: #3b3b3b;
+  width: 227px;
+}
+
+footer h5 {
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+  font-weight: normal;
+  margin: 33px 0px 17px 0px;
+}
+
+footer h5 span {
+  color: #49a144;
+}
+
+footer > .social {
+  display: inline-flex;
+}
+
+.social .facebook_logo,
+.social .twitter_logo,
+.social .instagram_logo {
+  display: inline-flex;
+  margin-right: 12px;
+  width: 24px;
+  height: 24px;
+}
+
+.social .facebook_logo {
+  background: url(../images/facebook.svg) no-repeat;
+}
+
+.social .twitter_logo {
+  background: url(../images/twitter.svg) no-repeat;
+}
+
+.social .instagram_logo {
+  background: url(../images/instagram.svg) no-repeat;
+}
+
+footer .footer-menu {
+  margin-top: 39px;
+}
+
+footer .footer-menu a {
+  display: flex;
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 15px;
+  margin: 0px 0px 23px 0px;
+}
+
+footer .mobile-apps {
+  display: flex;
+  justify-content: center;
+}
+
+footer .mobile-apps a {
+  margin: 40px 20px;
+}
+
+.mobile-apps .appstore {
+  width: 122px;
+  height: 40px;
+  background: url(../images/app_store.png) no-repeat;
+}
+
+.mobile-apps .googleplay {
+  width: 135px;
+  height: 40px;
+  background: url(../images/google_play.png) no-repeat;
+}
+
+footer .copyright {
+  display: flex;
+  color: #fff;
+  text-decoration: none;
+  font-size: 11px;
+  line-height: 13px;
+  margin: 40px 0;
+}
+
+.top_button {
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  right: 16px;
+  bottom: 24px;
+  background: #59bd5a url(../images/arrow.svg) no-repeat center;
+  border-radius: 2px;
+}
